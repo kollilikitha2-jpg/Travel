@@ -1,0 +1,143 @@
+.destinations-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 95px 28px 100px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.section-heading h2,
+.offer-section h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -1.4px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  margin-top: 14px;
+  line-height: 1.7;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  padding: 55px 20px;
+  text-align: center;
+  background: var(--light);
+  border-radius: 16px;
+}
+
+.no-results h3 {
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: var(--muted);
+}
+
+.no-results button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: var(--primary);
+  font-weight: 600;
+}
+
+.offer-section {
+  max-width: 1184px;
+  margin: 0 auto 90px;
+  padding: 65px 55px;
+  border-radius: 24px;
+  color: white;
+  background:
+    linear-gradient(100deg, rgba(9, 48, 58, 0.96), rgba(9, 48, 58, 0.76)),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80")
+    center / cover;
+}
+
+.offer-section > div {
+  max-width: 570px;
+}
+
+.offer-section .eyebrow {
+  color: #8fe1dd;
+}
+
+.offer-section h2 {
+  max-width: 500px;
+}
+
+.offer-section p {
+  max-width: 500px;
+  margin-top: 18px;
+  color: #d5e3e6;
+  line-height: 1.8;
+}
+
+.offer-button {
+  display: inline-flex;
+  margin-top: 25px;
+  padding: 14px 21px;
+  background: white;
+  color: var(--primary-dark);
+  border-radius: 9px;
+  font-weight: 700;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.offer-button:hover {
+  transform: translateY(-2px);
+  background: #e8f7f6;
+}
+
+@media (max-width: 950px) {
+  .destination-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offer-section {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .destinations-section {
+    padding: 65px 18px;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .offer-section {
+    margin: 0 18px 60px;
+    padding: 38px 25px;
+    border-radius: 17px;
+  }
+}
